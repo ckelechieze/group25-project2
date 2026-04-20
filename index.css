@@ -5,12 +5,19 @@
 }
 
 body {
-    background-color: #ACBFA4;
-    margin: 1rem;
+    background-color: #e0e4de;
+    margin: 1rem 0.4rem;
+    max-width: 1000px;
+}
+
+button {
+    background-color: rgb(23, 133, 133);
 }
 
 /*Nav and Menu*/
 nav {
+    position: sticky;
+    top: 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -19,6 +26,14 @@ nav {
     padding: 5px;
 }
 
+p {
+    color: gray;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+}
 h1, h2, h3 {
     font-family: Raleway;
     color: #213C51;
@@ -32,8 +47,8 @@ h1, h2, h3 {
     display: none;
     position: absolute;
     background-color: aliceblue;
-    top: 4rem;
-    right: 15px;
+    top: 4.1rem;
+    right: 10px;
     border-radius: 5px;
 }
 
@@ -71,12 +86,17 @@ h1, h2, h3 {
     gap: 0.5rem;
 }
 
+.hero-content p {
+    color: black;
+}
+
 .hero button {
-    background-color: #FF7F11;
+    background-color: aqua;
     border: none;
     padding: 0.8rem;
     color: white;
     font-weight: bold;
+    font-size: 20px;
     border-radius: 8px;
     letter-spacing: 2px;
 }
@@ -97,8 +117,13 @@ h1, h2, h3 {
 
 .featured-products-grid {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
+    flex: 1 1 200px;
     gap: 2rem;
+}
+
+.product-card {
+    flex: 1 1 190px;
 }
 
 .product-card img {
@@ -117,10 +142,12 @@ h1, h2, h3 {
 }
 
 .product-card button {
-    background-color: #FF7F11;
+    background-color: aqua;
     color: white;
     border: none;
     padding: 7px;
+    font-weight: 700;
+    font-size: 20px;
     letter-spacing: 1px;
     border-radius: 5px;
 }
@@ -131,14 +158,17 @@ h1, h2, h3 {
 }
 .category-grid {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 2rem;
     margin-bottom: 1rem;
 }
 
 .category-card {
     position: relative;
     margin-top: 2rem;
+    border-radius: 10px;
     overflow: hidden;
+    flex: 1 1 197px;
 }
 
 .category-card h3 {
@@ -174,6 +204,7 @@ h1, h2, h3 {
     border: 2px solid aqua;
     padding: 15px;
     border-radius: 8px;
+    background: #f9f9f9;
 }
 
 .deals-contents {
@@ -187,3 +218,106 @@ h1, h2, h3 {
     font-size: 20px;
 }
 
+/*special deals*/
+.why-shop {
+    padding: 5rem 1rem;
+    text-align: center;
+}
+
+.why-shop h2 {
+    margin-bottom: 1.5rem;
+    font-size: 1.8rem;
+}
+
+.features {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.feature {
+    flex: 1 1 200px;
+    max-width: 250px;
+    padding: 1.2rem;
+    border-radius: 12px;
+    background: #f9f9f9;
+}
+
+.icon {
+    width: 100px;
+    height: 100px;
+}
+
+.feature p {
+    color: gray;
+    padding-top: 0.5rem;
+}
+
+/*footer section*/
+.footer {
+    background: #343131;
+    color: #fff;
+    padding: 40px;
+}
+
+.footer-section h3, .footer-section h4 {
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.footer-section p {
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: space-between;
+}
+
+.footer-section {
+    flex: 1 1 200px;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 5px;
+}
+
+.footer-section a {
+    text-decoration: none;
+    color: blue;
+    font-size: 14px;
+}
+
+.footer-section a:hover {
+    color: #fff;
+}
+
+.socials {
+    display: flex;
+    gap: 10px;
+}
+
+.socials img {
+    width: 30px;
+    transition: transform 0.2s ease;
+}
+
+.socials img:hover {
+    transform: scale(1.5);
+}
+
+.footer-end{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 13px;
+    color: #aaa;
+}
