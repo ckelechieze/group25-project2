@@ -6,7 +6,7 @@
 
 body {
     background-color: #e0e4de;
-    margin: 1rem 0.4rem;
+    margin: 1rem auto;
     max-width: 1000px;
 }
 
@@ -24,6 +24,12 @@ nav {
     gap: 2rem;
     background-color: aliceblue;
     padding: 5px;
+}
+
+.logo-title {
+    display: flex;
+    align-items: center;
+    gap: 4rem;
 }
 
 p {
@@ -47,8 +53,8 @@ h1, h2, h3 {
     display: none;
     position: absolute;
     background-color: aliceblue;
-    top: 4.1rem;
-    right: 10px;
+    top: 3.9rem;
+    right: 2px;
     border-radius: 5px;
 }
 
@@ -63,6 +69,13 @@ h1, h2, h3 {
 
 .menu li a {
     text-decoration: none;
+    color: #213C51;
+}
+
+.menu li a:hover {
+    background-color: aqua;
+    padding: 2px;
+    border-radius: 5px;
 }
 
 .hamburger {
@@ -320,4 +333,28 @@ h1, h2, h3 {
     margin-top: 20px;
     font-size: 13px;
     color: #aaa;
+}
+
+
+/*Media Queries*/
+@media(min-width: 768px) {
+   .logo-title {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+   }
+
+   .hamburger{
+    display: none;
+   }
+
+   .menu {
+    display: flex;
+    gap: 1.5rem;
+    position: absolute;
+    top: 25%;
+    right: 5px;
+    font-weight: 600;
+    font-size: 18px;
+   }
 }
