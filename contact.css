@@ -17,8 +17,8 @@ h1, h2, h3 {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: white;
-  text-shadow: 0 2px 4px rgba(0,0,0,0.6);
+  color: #213C51;
+  text-shadow: 0 2px 4px #d4dfe799;
 }
 
 .hero h1 {
@@ -56,7 +56,7 @@ form input, form textarea {
 form button {
   margin-top: 1.5rem;
   padding: 1rem;
-  background: #0078d7;
+  background: aqua;
   color: white;
   border: none;
   border-radius: 4px;
