@@ -1,0 +1,46 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+h2{
+    text-align: center;
+    padding: 2rem;
+}
+
+ h4 {
+    font-size: 1.3rem;
+}
+
+
+
+/*products Our products*/
+
+.product-1 {
+    width:200px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    background-color: aliceblue;
+    padding:0.5rem;
+    margin: 1.1rem;
+    position: relative;
+}
+.product-1 img {
+    width:11rem;
+    position: relative;
+    padding: 0.5rem;
+}
+.product-1 p {
+    padding:15px
+}
+.cart-1 {
+    display: flex;
+    position: relative;
+}
+.cart-1 i {
+    position: absolute;
+    top:0;
+    right:0;
+    font-weight: 900;
+    font-size: 2rem;
+}
