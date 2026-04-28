@@ -28,11 +28,16 @@ body {
 
 .about-hero h1 {
     position: absolute;
-    bottom: 20px;
-    left: 20px;
+    bottom: 55px;
+    left: 30px;
     font-family: 'Raleway', sans-serif;
     font-size: 2.5rem;
+    font-weight: 600;
     color: white;
+    border: 2px solid white;
+    background-color: rgba(0,0,0,0.3);
+    padding: 5px 10px;
+    border-radius: 8px;
 }
 
 /* SECTION */
@@ -53,6 +58,7 @@ section p {
     text-align: center;
     max-width: 700px;
     margin: auto;
+    font-size: 1.2rem;
 }
 
 /* GRID LAYOUT */
@@ -73,7 +79,7 @@ section p {
 }
 
 /* IMAGE */
-.about-card img {
+.about-cards img {
     width: 100%;
     height: 220px;
     object-fit: cover;
@@ -81,11 +87,11 @@ section p {
 }
 
 /* HOVER EFFECT */
-.about-card:hover img {
+.about-cards:hover img {
     transform: scale(1.05);
 }
 
-.about-card:hover {
+.about-cards:hover {
     box-shadow: 0 8px 20px rgba(0,0,0,0.2);
 }
 
@@ -119,7 +125,7 @@ section p {
     background: #f1f1f1;
     padding: 10px 20px;
     border-radius: 20px;
-    font-size: 14px;
+    font-size: 16px;
     transition: 0.3s;
 }
 
@@ -151,6 +157,27 @@ button:hover {
     text-align: center;
 }
 
+/*ABOUT CARD*/
+.about-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.about-card img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    align-self: center;
+    border-radius: 100%;
+}
+
+.about-card:hover img {
+    transform: scale(1.05);
+    border: 2px solid aqua;
+}
+
 /* RESPONSIVE */
 @media (max-width: 768px) {
     .about-hero {
@@ -163,5 +190,24 @@ button:hover {
 
     h2 {
         font-size: 1.5rem;
+    }
+}
+
+@media (min-width: 768px) {
+    .about-grid {
+    display: grid;
+    grid-template-columns:repeat(3, 1fr);
+    gap: 20px;
+    align-items: start;
+    }
+
+    .about-grid > :nth-child(4) {
+    grid-column: 1; /* left */
+    grid-row: 2;
+    }
+
+    .about-grid > :nth-child(5) {
+    grid-column: 3; /* right */
+    grid-row: 2;
     }
 }
