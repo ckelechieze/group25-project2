@@ -52,6 +52,7 @@ h2 {
     text-align: center;
     margin-bottom: 20px;
     font-size: 2rem;
+    color: #213C51;
 }
 
 section p {
@@ -209,5 +210,23 @@ button:hover {
     .about-grid > :nth-child(5) {
     grid-column: 3; /* right */
     grid-row: 2;
+    }
+
+    section p {
+        font-size: 26px;
+    }
+
+    h2 {
+        color: #213C51;
+        font-size: 2.5rem;
+    }
+
+    .value-item {
+        font-size: 30px;
+    }
+
+    .about-details h4, .about-details p {
+        font-size: 22px;
+        font-weight: 600;
     }
 }
