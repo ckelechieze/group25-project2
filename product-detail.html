@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./product-detail.css">
+    <title>Product-Detail</title>
+</head>
+<body>
+    
+    <section class="product-detail">
+        
+        <!--image gallery-->
+      <div class="images">  
+        <!--radio buttons-->
+        <input type="radio" name="images" id="img1" checked>
+        <input type="radio" name="images" id="img2">
+        <input type="radio" name="images" id="img3">
+
+        <!--main images-->
+        <div class="main-images">
+            <img src="./images/car angle1.jpg" alt="angle1" class="img img1">
+            <img src="./images/car-angle2.jpg" alt="angle2" class="img img2">
+            <img src="./images/car-angle3.jpg" alt="angle3" class="img img3">
+        </div>
+
+        <!--thumbnails-->
+        <div class="thumbnails">
+            <label for="img1"><img src="./images/car angle1.jpg" alt="angle1"></label>
+            <label for="img2"><img src="./images/car-angle2.jpg" alt="angle2"></label>
+            <label for="img3"><img src="./images/car-angle3.jpg" alt="angle3"></label>
+        </div>
+      </div>  
+
+      <!--Product-Details-->
+      <div class="details">
+
+        <!--Name-->
+        <h1 class="name">Toyota Corolla</h1>
+
+        <!--Price-->
+        <p class="price">
+            <span class="old">#48,000</span>
+            <span class="new">#38,000</span>
+        </p>
+
+        <!--Description-->
+        <p class="description">
+            Fuel economy Toyota Corolla, fast movement and easy to maintain.
+        </p>
+
+        <!--Specifications-->
+        <div class="specs">
+            <h3>Specifications</h3>
+            <ul>
+                <li>Fuel Type: Petrol</li>
+                <li>Horsepower: 450hp</li>
+                <li>Color: Red</li>
+                <li>Transmission: Automatic</li>
+            </ul>
+        </div>
+
+        <!--Size/Color-->
+        <div class="options">
+
+            <!--Colors-->
+            <div class="colors">
+                <h3>Available Colors: </h3>
+                <div class="color-options">
+                  <span class="blue"></span>
+                  <span class="red"></span>
+                  <span class="orange"></span>
+                </div>
+            </div>
+
+            <!--sizes-->
+            <div class="sizes">
+                <p>Size:</p>
+                <button>S</button>
+                <button>M</button>
+                <button>L</button>
+            </div>
+        </div>
+
+        <button class="cart-btn">Add to Cart</button>
+      </div>
+    </section>
+</body>
+</html>
