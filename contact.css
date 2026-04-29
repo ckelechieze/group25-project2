@@ -8,6 +8,7 @@ body {
 }
 h1, h2, h3 {
   font-family: 'Poppins', 'Raleway', sans-serif;
+  color: #213C51;
 }
 
 /* Hero Section */
@@ -24,12 +25,13 @@ h1, h2, h3 {
 .hero h1 {
   font-size: 3rem;
   margin: 0;
-  color: rgb(233, 231, 228);
+  color: white;
   text-align: center;
   margin-top: 12rem;
   border-radius: 8px;
   padding: 2px 4px;
   border: 2px solid #d4dfe7;
+  background-color: rgba(0,0,0,0.3);
 }
 
 /* Contact Section */
@@ -129,5 +131,26 @@ iframe {
 @media(max-width: 768px) {
   .contact-section {
     grid-template-columns: 1fr;
+  }
+}
+
+@media(min-width: 768px) {
+  form {
+    font-size: 25px;
+  }
+
+  form button {
+    font-size: 28px;
+    font-weight: 700;
+    width: 300px;
+    letter-spacing: 2px;
+  }
+
+  .info {
+    font-size: 25px;
+  }
+
+  .faq {
+    font-size: 25px;
   }
 }
