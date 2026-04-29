@@ -46,6 +46,24 @@ del {
     color:white;
     background-color: red;
 }
+.colors .blue {
+    background-color: blue;
+    border-radius:50%;
+    padding:5px 12px;
+    margin: 2px;
+}
+.colors .red {
+    background-color: red;
+    border-radius:50%;
+    padding:5px 12px;
+    margin: 2px;
+}
+.colors .orange {
+    background-color: orange;
+    border-radius:50%;
+    padding:5px 12px;
+    margin: 2px;
+}
 
 
 /*slide animantion wasn't easy but we thank God*/
