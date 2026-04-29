@@ -3,6 +3,31 @@
     padding:0;
     box-sizing: border-box;
 }
+h2 {
+    text-align: center;
+    color: #213C51;
+
+}
+h3 {
+     color: #213C51;
+}
+img {
+    width: 100%;
+    border: 2px solid aqua;
+    border-radius: 10px;
+}
+button {
+     background-color: aqua;
+    color: white;
+    border: none;
+    padding: 7px;
+    font-weight: 700;
+    font-size: 20px;
+    letter-spacing: 1px;
+    border-radius: 5px;
+}
+
+/* image slides*/
 .slider {
     overflow:hidden;
 }
@@ -17,7 +42,13 @@
     float:left;
     width: 20%;
 }
+del {
+    color:white;
+    background-color: red;
+}
 
+
+/*slide animantion wasn't easy but we thank God*/
 @keyframes slider {
     0%{
        left : 0; 
@@ -43,4 +74,37 @@
     95%{
         left:-300%;
     }
+    100% {
+        left:-400%
+    }
 }
+
+
+/*.product details*/
+
+
+
+.product {
+    border: 2px solid rgba(0, 0, 0, 0.3);
+    margin: 2rem 0;
+    border-radius:2rem;
+    padding: 2rem;   
+}
+.product:hover {
+    background-color: black;
+    color: aqua;
+}
+.product .cart {
+    position: relative;
+    margin:0;
+
+}
+.product .cart i {
+    position:absolute;
+    right:0;
+    bottom: 0;
+    font-size:4rem;
+    font-weight:600;
+    color:aqua;
+}
+
