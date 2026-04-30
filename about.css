@@ -11,6 +11,8 @@ body {
     background-color: #ffffff;
     color: #333;
     line-height: 1.6;
+    margin: 1rem auto;
+    padding: 5px;
 }
 
 /*Navigation*/
@@ -130,9 +132,8 @@ section p {
 
 /* GRID LAYOUT */
 .about-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 25px;
+    display: flex;
+    flex-direction: column;
     margin-top: 30px;
 }
 
@@ -280,7 +281,7 @@ button:hover {
     font-weight: 600;
     font-size: 18px;
    }
-}
+
     .about-grid {
     display: grid;
     grid-template-columns:repeat(3, 1fr);
@@ -316,3 +317,4 @@ button:hover {
         font-weight: 600;
     }
 }
+   

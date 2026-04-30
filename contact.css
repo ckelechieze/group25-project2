@@ -5,10 +5,84 @@ body {
   line-height: 1.6;
   color: #333;
   background-color: #f9f9f9;
+  margin: 1rem auto;
+  padding: 5px;
 }
 h1, h2, h3 {
   font-family: 'Poppins', 'Raleway', sans-serif;
   color: #213C51;
+}
+
+/*Navigation*/
+nav {
+    position: sticky;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    background-color: aliceblue;
+    padding: 5px;
+}
+
+.logo-title {
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+}
+
+p {
+    color: gray;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+}
+h1, h2, h3 {
+    font-family: Raleway;
+    color: #213C51;
+}
+
+#menu-toggle {
+    display: none;
+}
+
+.menu {
+    display: none;
+    position: absolute;
+    background-color: aliceblue;
+    top: 3.9rem;
+    right: 2px;
+    border-radius: 5px;
+}
+
+#menu-toggle:checked ~ .menu {
+    display: block;
+}
+
+.menu li {
+    list-style: none;
+    padding: 5px;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: #213C51;
+}
+
+.menu li a:hover {
+    background-color: aqua;
+    padding: 2px;
+    border-radius: 5px;
+}
+
+.hamburger {
+    position: relative;
+    background: none;
+    border: none;
+    font-size: 24px; 
+    cursor: pointer;
 }
 
 /* Hero Section */
@@ -128,6 +202,28 @@ iframe {
 }
 
 /* Responsive */
+
+@media(min-width: 768px) {
+   .logo-title {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+   }
+
+   .hamburger{
+    display: none;
+   }
+
+   .menu {
+    display: flex;
+    gap: 1.5rem;
+    position: absolute;
+    top: 25%;
+    right: 5px;
+    font-weight: 600;
+    font-size: 18px;
+   }
+}
 @media(max-width: 768px) {
   .contact-section {
     grid-template-columns: 1fr;
