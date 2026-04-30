@@ -3,6 +3,15 @@
     padding:0;
     box-sizing: border-box;
 }
+
+#product-detail h2 {
+    width: 80%;
+    margin: 2rem auto;
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    border-radius: 8px;
+}
+
 h2 {
     text-align: center;
     color: #213C51;
@@ -27,6 +36,43 @@ button {
     border-radius: 5px;
 }
 
+/*Description*/
+.desc {
+    margin: 2rem 0;
+    padding: 1rem;
+    border: 2px solid rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+}
+
+.desc h3 {
+    text-align: center;
+    font-size: 24px;
+}
+
+.desc p {
+    font-size: 18px;
+    color: gray;
+    text-align: justify;
+}
+
+/*Specifications*/
+.spec {
+    margin: 2rem 0;
+    padding: 1rem 2rem;
+    border: 2px solid rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+}
+
+.spec h4 {
+    text-align: center;
+    font-size: 22px;
+}
+
+.spec ul {
+    font-size: 18px;
+    color: gray;
+}
+
 /* image slides*/
 .slider {
     overflow:hidden;
@@ -42,27 +88,84 @@ button {
     float:left;
     width: 20%;
 }
-del {
-    color:white;
-    background-color: red;
+
+/*Price and colors*/
+.price {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    text-align: center;
+    font-size: 20px;
 }
-.colors .blue {
+
+.price p {
+    font-weight: 600;
+}
+
+.old-price {
+    background-color: red; 
+    color: white;
+    font-weight: 700;
+    padding: 5px 12px;
+    border-radius: 8px;
+    text-decoration: line-through;
+}
+
+.color-options {
+    display: flex;
+}
+
+.new-price {
+    background-color: rgb(217, 215, 215);
+    padding: 5px 12px;
+    border-radius: 8px;
+    font-weight: 700;
+}
+
+/*colors*/
+.colors {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.colors h4 {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.blue {
+    width: 40px;
+    height: 40px;
     background-color: blue;
     border-radius:50%;
-    padding:5px 12px;
     margin: 2px;
 }
-.colors .red {
+.red {
+    width: 40px;
+    height: 40px;
     background-color: red;
     border-radius:50%;
-    padding:5px 12px;
     margin: 2px;
 }
-.colors .orange {
+.orange {
     background-color: orange;
     border-radius:50%;
-    padding:5px 12px;
     margin: 2px;
+    width: 40px;
+    height: 40px;
+}
+
+/*sizes*/
+.sizes {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.sizes p {
+    font-size: 18px;
+    font-weight: 600;
 }
 
 
@@ -109,8 +212,7 @@ del {
     padding: 2rem;   
 }
 .product:hover {
-    background-color: black;
-    color: aqua;
+    background-color: rgb(245, 240, 240)
 }
 .product .cart {
     position: relative;
@@ -121,7 +223,7 @@ del {
     position:absolute;
     right:0;
     bottom: 0;
-    font-size:4rem;
-    font-weight:600;
+    font-size:3rem;
     color:aqua;
 }
+
